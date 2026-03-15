@@ -2,10 +2,11 @@
 
 **A professional-grade wordlist generator built in Go for authorized penetration testers and security researchers.**
 
-![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat-square&logo=go&logoColor=white)
+![WordGen](https://img.shields.io/badge/WordGen 1.0.0 -00ADD8?style=flat-square&
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-0d1117?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)
 ![Use](https://img.shields.io/badge/Use-Authorized%20Testing%20Only-dc2626?style=flat-square)
+
 
 ---
 
@@ -38,16 +39,11 @@ This tool is intended **solely for authorized security testing** on systems you 
 
 ## Installation
 
-### Requirements
-
-- [Go 1.21 or higher](https://golang.org/dl/)
-
 ### Build from Source
 
 ```bash
 git clone https://github.com/CzaxStudio/wordgen.git
 cd wordgen
-go build -o wordgen .
 ```
 
 **Windows (PowerShell):**
@@ -55,7 +51,6 @@ go build -o wordgen .
 ```powershell
 git clone https://github.com/CzaxStudio/wordgen.git
 cd wordgen
-go build -o wordgen.exe .
 ```
 
 ---
