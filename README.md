@@ -1,4 +1,4 @@
-# WordGen
+# WordGen v2
 
 **A professional-grade wordlist generator built in Go for authorized penetration testers and security researchers.**
 
@@ -20,6 +20,23 @@ Built with Go's native concurrency and buffered I/O, WordGen is engineered for s
 ## Legal Notice
 
 This tool is intended **solely for authorized security testing** on systems you own or have explicit written permission to assess. Unauthorized use against third-party systems is illegal under computer fraud laws in most jurisdictions. The author accepts no liability for misuse. Always obtain written authorization before conducting any penetration test.
+
+## NEW FEATURES!
+
+Hashcat rule engine	Parse & apply real hashcat rules (s, @, ^ $, i, o, [, ], {, }, T, D, f, etc.)
+Built-in rule sets	best64, toggles, leetspeak, common — ready out of the box
+Compressed output	-compress=gzip (bzip2/xz stub) — crunch has -z, now you match it
+Estimate/dry-run	-estimate shows size without generating
+stdin pipe	-stdin chains with cewl, curl, etc.
+Concurrent workers	-threads=N leverages multi-core
+Toggle-case	-toggle=N like rsmangler
+Extended patterns	! = UPPER, . = all chars, \ escape
+Resume support	Placeholder for checkpoint/resume
+Unique output	-unique dedup flag
+Debug mode	-debug for troubleshooting rules
+Configurable buffer	-mem-buf=64 for performance tuning
+16 leet substitutions	Expanded from 8 to 16+ mappings
+Stats on output	File size, rate, ETA, moving average
 
 ---
 
